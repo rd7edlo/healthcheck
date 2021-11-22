@@ -14,7 +14,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..!'
-                sh 'ls -lah'
+                sh 'docker build .'
             }
         }
         // stage('Test') {
