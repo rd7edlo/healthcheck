@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Prepare') {
             steps {
-                git credentialsId: 'github', url: "https//github.com/${ORGANIZATION_NAME}/${SERVICE_NAME}"
+                git credentialsId: 'github', url: "https://github.com/${ORGANIZATION_NAME}/${SERVICE_NAME}"
             }
         }
         stage('Build') {
