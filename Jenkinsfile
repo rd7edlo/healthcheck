@@ -14,7 +14,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..!'
-                sh 'cd ${SERVICE_NAME} && ls -lah'
+                sh 'ls -lah'
             }
         }
         // stage('Test') {
